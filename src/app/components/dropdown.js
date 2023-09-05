@@ -9,15 +9,11 @@ export default function Dropdown() {
 
   // Retrieve all products from API
   function getProducts() {
-    let productArr = [];
     fetch("https://dummyjson.com/products")
       .then((res) => res.json())
       .then((data) => {
         const productData = data.products;
-        productData.forEach((product) => {
-          productArr.push(productData);
-        });
-        setProducts(...productArr);
+        setProducts([...productData]);
       });
   }
 
@@ -25,6 +21,15 @@ export default function Dropdown() {
   function handleProductChoice(e) {
     const productChoice = e.target.value;
     setSelectedProduct(productChoice);
+    getSingleProduct(productChoice);
+  }
+
+  // Retrieve selected product data
+  function getSingleProduct(productChoice) {
+    console.log("productChoice", productChoice);
+    fetch("https://dummyjson.com/products/" + productChoice)
+      .then((res) => res.json())
+      .then(console.log);
   }
 
   return (
@@ -40,12 +45,8 @@ export default function Dropdown() {
 
       {products.map((product) => (
         <Option
-          className={styles.brightFont}
           key={product.id}
           product={product}
-          setProducts={setProducts}
-          selectedProduct={selectedProduct}
-          setSelectedProduct={setSelectedProduct}
         />
       ))}
     </select>
