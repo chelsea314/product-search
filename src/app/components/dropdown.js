@@ -2,50 +2,52 @@ import { useState } from "react";
 import styles from "../page.module.css";
 import Option from "./option";
 
-export default function dropdown({ products, setProducts }) {
-  const [dropdownOpen, setDropDownOpen] = useState(false);
-  // const [products, setProducts] = useState([]);
+export default function Dropdown() {
+  // State Controls
+  const [products, setProducts] = useState([]);
+  const [selectedProduct, setSelectedProduct] = useState("Select a Product");
 
+  // Retrieve all products from API
   function getProducts() {
     let productArr = [];
-    setDropDownOpen(true);
     fetch("https://dummyjson.com/products")
       .then((res) => res.json())
       .then((data) => {
-        console.log("data", data);
         const productData = data.products;
         productData.forEach((product) => {
-          console.log(product.title);
           productArr.push(productData);
         });
-        console.log(productArr);
         setProducts(...productArr);
       });
   }
 
-  console.log(products);
+  // Set selected product choice
+  function handleProductChoice(e) {
+    const productChoice = e.target.value;
+    setSelectedProduct(productChoice);
+  }
 
   return (
-    <>
-      <select 
-        className={styles.brightFont} 
-        onClick={getProducts}>
-        
-        <option value="" disabled selected>
-          Select a Product
-        </option>
+    <select
+      defaultValue={selectedProduct}
+      className={styles.brightFont}
+      onClick={getProducts}
+      onChange={handleProductChoice}
+    >
+      <option key="" disabled>
+        Select a Product
+      </option>
 
-        {products.map((product) => (
-          <Option 
-            className={styles.brightFont} 
-            key={product.key} 
-            product={product}
-            setProducts={setProducts}
-            products={products} 
-            />
-        ))}
-
-      </select>
-    </>
+      {products.map((product) => (
+        <Option
+          className={styles.brightFont}
+          key={product.id}
+          product={product}
+          setProducts={setProducts}
+          selectedProduct={selectedProduct}
+          setSelectedProduct={setSelectedProduct}
+        />
+      ))}
+    </select>
   );
 }
