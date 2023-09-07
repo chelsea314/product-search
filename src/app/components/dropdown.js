@@ -2,7 +2,7 @@ import { useState } from "react";
 import styles from "../page.module.css";
 import Option from "./option";
 
-export default function Dropdown() {
+export default function Dropdown(props) {
   // State Controls
   const [products, setProducts] = useState([]);
   const [selectedProduct, setSelectedProduct] = useState("Select a Product");
@@ -24,12 +24,10 @@ export default function Dropdown() {
     getSingleProduct(productChoice);
   }
 
-  // Retrieve selected product data
+  // Retrieve selected product data & send to page.js
   function getSingleProduct(productChoice) {
     console.log("productChoice", productChoice);
-    fetch("https://dummyjson.com/products/" + productChoice)
-      .then((res) => res.json())
-      .then(console.log);
+      props.onSubmit(productChoice)
   }
 
   return (
@@ -47,6 +45,7 @@ export default function Dropdown() {
         <Option
           key={product.id}
           product={product}
+          onClick={getSingleProduct}
         />
       ))}
     </select>
