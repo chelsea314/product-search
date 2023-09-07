@@ -1,8 +1,14 @@
-export default function ProductImg() {
+import Image from 'next/image'
+
+export default function ProductImg({value}) {
+    console.log(value)
     return (
-        <img alt="">
-            
-        </img>
+        <Image
+            src={value.thumbnail}
+            alt={value.title}
+            width={286}
+            height={151}
+            flex-shrink={0}
+        />
     )
 }
-
