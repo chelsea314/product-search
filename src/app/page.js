@@ -1,8 +1,8 @@
 "use client";
 import { useState } from "react";
 import styles from "./page.module.css";
-import Dropdown from "./components/dropdown";
-import ProductImg from "./components/productImg";
+import Dropdown from "./components/dropdown"
+import ProductCard from "./components/ProductCard";
 
 export default function Home() {
   const [isSelectionMade, setisSelectionMade] = useState(false);
@@ -37,7 +37,7 @@ export default function Home() {
     <main>
       <Dropdown onSubmit={handleChange} />
       {isSelectionMade ? (
-        <ProductImg value={productData} />
+        <ProductCard value={productData} />
       ) : (
         <p className={styles.brightFont}>No Product Selected</p>
       )}

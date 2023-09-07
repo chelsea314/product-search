@@ -1,6 +1,6 @@
 import Image from 'next/image'
 
-export default function ProductImg({value}) {
+export default function ProductThumbnail({value}) {
     console.log(value)
     return (
         <Image

@@ -1,6 +1,6 @@
 import { useState } from "react";
 import styles from "../page.module.css";
-import Option from "./option";
+import Option from "./Option";
 
 export default function Dropdown(props) {
   // State Controls
