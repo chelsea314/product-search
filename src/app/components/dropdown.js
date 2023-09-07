@@ -1,6 +1,6 @@
 import { useState } from "react";
 import styles from "../page.module.css";
-import Option from "./Option";
+import Option from "./option";
 
 export default function Dropdown(props) {
   // State Controls
@@ -24,9 +24,8 @@ export default function Dropdown(props) {
     getSingleProduct(productChoice);
   }
 
-  // Retrieve selected product data & send to page.js
+  // Retrieve selected product data & send to parent
   function getSingleProduct(productChoice) {
-    console.log("productChoice", productChoice);
       props.onSubmit(productChoice)
   }
 

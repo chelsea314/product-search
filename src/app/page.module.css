@@ -6,7 +6,7 @@
   line-height: normal;
 }
 
-.thumbnail {
+.productThumbnail {
   border-radius: 10px;
   border: 1px solid #1AA2B0;
 }
@@ -20,3 +20,46 @@
   line-height: 46px; /* 255.556% */ 
 }
 
+.productCategory {
+  color: #FFF;
+  font-family: Inter;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 0px; /* 0% */
+}
+
+.categoryContainer {
+  width: 80px;
+  height: 14px;
+  flex-shrink: 0;
+  border-radius: 64px;
+  background: #1AA2B0;
+}
+
+.productDescription {
+  color: #FFF;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 46px; /* 328.571% */
+}
+
+.productBrand {
+  color: #1AA2B0;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 46px; /* 328.571% */
+}
+
+.productPrice {
+  color: #FFF;
+  font-family: Inter;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 0px; /* 0% */
+}

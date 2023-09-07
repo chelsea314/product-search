@@ -8,7 +8,7 @@ import ProductTitle from './ProductTitle'
 
 export default function productCard({value}) {
   return (
-    <div>
+    <div >
         <ProductThumbnail value={value}/>
         <ProductTitle value={value}/>
         <ProductBrand value={value}/>

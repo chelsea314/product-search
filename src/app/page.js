@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
 import styles from "./page.module.css";
-import Dropdown from "./components/dropdown"
+import Dropdown from "./components/Dropdown"
 import ProductCard from "./components/ProductCard";
 
 export default function Home() {
@@ -16,11 +16,9 @@ export default function Home() {
   });
 
   function handleChange(productChoice) {
-    console.log(productChoice);
     fetch("https://dummyjson.com/products/" + productChoice)
       .then((res) => res.json())
       .then((data) => {
-        console.log(data);
         setproductData({
           thumbnail: data.thumbnail,
           title: data.title,
