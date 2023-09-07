@@ -32,12 +32,12 @@ export default function Home() {
   }
 
   return (
-    <main>
+    <main className={styles.main}>
       <Dropdown onSubmit={handleChange} />
       {isSelectionMade ? (
         <ProductCard value={productData} />
       ) : (
-        <p className={styles.brightFont}>No Product Selected</p>
+        <p className={styles.noProduct}>No Product Selected</p>
       )}
     </main>
   );

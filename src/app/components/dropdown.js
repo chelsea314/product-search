@@ -32,7 +32,7 @@ export default function Dropdown(props) {
   return (
     <select
       defaultValue={selectedProduct}
-      className={styles.brightFont}
+      className={styles.dropdown}
       onClick={getProducts}
       onChange={handleProductChoice}
     >

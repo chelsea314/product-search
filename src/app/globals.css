@@ -16,25 +16,13 @@
 
 html,
 body {
-  /* max-width: 100vw;
-  overflow-x: hidden; */
   height: 100%;
-}
-
-body {
   background: var(--background-blue);
+  margin: 0 auto;
+  position: relative;
 }
 
 a {
   color: inherit;
   text-decoration: none;
-}
-
-select {
-  border-radius: 6px;
-  border: 1px solid var(--bright-teal);
-  background: #1E1D2D;
-  width: 600px;
-  height: 60px;
-  flex-shrink: 0;
 }
