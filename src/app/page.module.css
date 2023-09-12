@@ -10,7 +10,6 @@
 .noProduct {
   color: #1AA2B0;
   text-align: center;
-  font-family: Inter;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -35,7 +34,6 @@
 
 .productCard {
   display: flex;
-
 }
 
 .productThumbnail {
@@ -48,7 +46,6 @@
 
 .productTitle {
   color: #FFF;
-  font-family: Inter;
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
@@ -71,7 +68,6 @@
 
 .productCategory {
   color: #FFF;
-  font-family: Inter;
   font-size: 10px;
   font-style: normal;
   font-weight: 700;
@@ -83,7 +79,6 @@
 
 .productDescription {
   color: #FFF;
-  font-family: Inter;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -97,7 +92,6 @@
 
 .productBrand {
   color: #1AA2B0;
-  font-family: Inter;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -110,7 +104,6 @@
 
 .productPrice {
   color: #FFF;
-  font-family: Inter;
   font-size: 32px;
   font-style: normal;
   font-weight: 800;
