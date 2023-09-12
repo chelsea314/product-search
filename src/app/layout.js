@@ -1,22 +1,20 @@
 import './globals.css';
 import { Inter } from '@next/font/google';
 
+// Setting font Inter to be default font for page
 const inter = Inter({ 
   subsets: ['latin'],
-  weight: ['400', '700'] 
 })
 
 export const metadata = {
   title: 'Shop til You Drop',
-  description: 'Front End Take Home Assessment by Chelsea',
-
+  description: 'Search for products and recieve back information about selected product.',
 }
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={inter.className}>
-      <body
-      className={inter.className}>{children}</body>
+      <body>{children}</body>
     </html>
   )
 }

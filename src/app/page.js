@@ -3,9 +3,15 @@
 import { useState } from "react";
 import styles from "./page.module.css";
 import Dropdown from "./components/Dropdown"
-import ProductCard from "./components/ProductCard";
+import ProductThumbnail from "./components/ProductThumbnail";
+import ProductTitle from "./components/ProductTitle";
+import ProductCategory from "./components/ProductCategory";
+import ProductBrand from "./components/ProductBrand";
+import ProductPrice from "./components/ProductPrice";
+import ProductDescription from "./components/ProductDescription";
 
 export default function Home() {
+  // State settings for Product and Selection
   const [isSelectionMade, setisSelectionMade] = useState(false);
   const [productData, setproductData] = useState({
     thumbnail: "",
@@ -16,10 +22,13 @@ export default function Home() {
     description: "",
   });
 
+  // Function to handle user selection
   function handleChange(productChoice) {
+    // Retrieve selected product's data from dummyjson API
     fetch("https://dummyjson.com/products/" + productChoice)
       .then((res) => res.json())
       .then((data) => {
+        // Set product state to match data retrieved from API
         setproductData({
           thumbnail: data.thumbnail,
           title: data.title,
@@ -28,18 +37,29 @@ export default function Home() {
           category: data.category,
           description: data.description,
         });
+        // Set selection state to show Card and remove 'No Product Selected' message
         setisSelectionMade(true);
       });
   }
 
   return (
-    <main className={styles.main}>
+    <div >
       <Dropdown onSubmit={handleChange} />
       {isSelectionMade ? (
-        <ProductCard value={productData} />
+        <div>
+          <ProductThumbnail value={productData} />
+          <ProductTitle value={productData} />
+          <ProductBrand value={productData} />
+          <ProductTitle value={productData}/>
+          <ProductCategory value={productData}/>
+          <ProductBrand value={productData}/>
+          <ProductPrice value={productData}/>
+          <ProductDescription value={productData}/>
+        </div>
+        
       ) : (
-        <p className={styles.noProduct}>No Product Selected</p>
+        <div className={styles.noProduct}>No Product Selected</div>
       )}
-    </main>
+    </div>
   );
 }

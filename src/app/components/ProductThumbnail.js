@@ -8,7 +8,6 @@ export default function ProductThumbnail({value}) {
             alt={value.title}
             width={286}
             height={151}
-            flex-shrink={0}
             className={styles.productThumbnail}
         />
     )
