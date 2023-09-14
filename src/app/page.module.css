@@ -1,23 +1,40 @@
-/* No Product Data Styles */
+/* 'No Product Data' Styles */
 .noProduct {
-  color: #1AA2B0;
+  color: #1aa2b0;
   text-align: center;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  position: fixed;
+  top: 564px;
+  left: 596px;
 }
 
 /* Dropdown Menu Styles*/
 .dropdown {
-  color: #1AA2B0;
+  max-width: 13em;
+  margin: 80px auto 0;
+  position: relative;
+  width: 100%;
+}
+
+.dropdownBtn {
+  background: #1e1d2d;
   font-size: 18px;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 400;
   line-height: normal;
   border-radius: 10px;
   border: 1px solid var(--bright-teal);
-  background: #1E1D2D;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 26px;
+  border-radius: 0.5em;
+  color: #1aa2b0;
+  background: #1e1d2d;
   width: 600px;
   height: 60px;
   flex-shrink: 0;
@@ -26,10 +43,51 @@
   left: 383px;
 }
 
+.arrow {
+  background-image: url(../../public/dropArrow.svg);
+  background-repeat: no-repeat;
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+  padding-right: 10px;
+  transition: transform ease-in-out 0.3s;
+}
+
+.dropdownContent {
+  list-style: none;
+  position: fixed;
+  top: 347px;
+  left: 383px;
+  width: 600px;
+  height: 462px;
+  flex-shrink: 0;
+  border-radius: 6px;
+  border: 1px solid #1aa2b0;
+  background: #1e1d2d;
+  overflow: auto;
+  padding: 26px 0px;
+  margin:0px;
+}
+
+.dropdownContent li {
+  color: #1aa2b0;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 46px;
+  display: block;
+  text-decoration: none;
+  padding-left: 26px;
+} 
+
+.dropdownContent li:hover {
+  background: #151420;
+}
+
 /* Product Data Styles */
 .productThumbnail {
   border-radius: 10px;
-  border: 1px solid #1AA2B0;
+  border: 1px solid #1aa2b0;
   flex-shrink: 0;
   position: fixed;
   top: 501px;
@@ -37,11 +95,11 @@
 }
 
 .productTitle {
-  color: #FFF;
+  color: #fff;
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
-  line-height: 46px; 
+  line-height: 46px;
   position: fixed;
   top: 501px;
   left: 699px;
@@ -52,14 +110,14 @@
   height: 14px;
   flex-shrink: 0;
   border-radius: 64px;
-  background: #1AA2B0;
+  background: #1aa2b0;
   position: fixed;
   top: 517px;
   left: 903px;
 }
 
 .productCategory {
-  color: #FFF;
+  color: #fff;
   font-size: 10px;
   font-style: normal;
   font-weight: 700;
@@ -71,7 +129,7 @@
 }
 
 .productBrand {
-  color: #1AA2B0;
+  color: #1aa2b0;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -82,18 +140,18 @@
 }
 
 .productPrice {
-  color: #FFF;
+  color: #fff;
   font-size: 32px;
   font-style: normal;
   font-weight: 800;
-  line-height: 0px;  
+  line-height: 0px;
   position: fixed;
   top: 595px;
   left: 699px;
 }
 
 .productDescription {
-  color: #FFF;
+  color: #fff;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;

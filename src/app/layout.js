@@ -1,5 +1,5 @@
 import './globals.css';
-import { Inter } from '@next/font/google';
+import { Inter } from "next/font/google";
 
 // Setting font Inter to be default font for page
 const inter = Inter({ 
