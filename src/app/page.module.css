@@ -1,6 +1,6 @@
 /* 'No Product Data' Styles */
 .noProduct {
-  color: #1aa2b0;
+  color: var(--bright-teal);
   text-align: center;
   font-size: 18px;
   font-style: normal;
@@ -20,7 +20,7 @@
 }
 
 .dropdownBtn {
-  background: #1e1d2d;
+  background: var(--blue-hue); 
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -33,8 +33,7 @@
   align-items: center;
   padding: 0px 26px;
   border-radius: 0.5em;
-  color: #1aa2b0;
-  background: #1e1d2d;
+  color: var(--bright-teal);
   width: 600px;
   height: 60px;
   flex-shrink: 0;
@@ -62,15 +61,15 @@
   height: 462px;
   flex-shrink: 0;
   border-radius: 6px;
-  border: 1px solid #1aa2b0;
-  background: #1e1d2d;
+  border: 1px solid var(--bright-teal);
+  background: var(--blue-hue);
   overflow: auto;
   padding: 26px 0px;
   margin:0px;
 }
 
 .dropdownContent li {
-  color: #1aa2b0;
+  color: var(--bright-teal);;
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
@@ -81,13 +80,13 @@
 } 
 
 .dropdownContent li:hover {
-  background: #151420;
+  background: var(--background-blue);
 }
 
 /* Product Data Styles */
 .productThumbnail {
   border-radius: 10px;
-  border: 1px solid #1aa2b0;
+  border: 1px solid var(--bright-teal);;
   flex-shrink: 0;
   position: fixed;
   top: 501px;
@@ -110,7 +109,7 @@
   height: 14px;
   flex-shrink: 0;
   border-radius: 64px;
-  background: #1aa2b0;
+  background: var(--bright-teal);;
   position: fixed;
   top: 517px;
   left: 903px;
@@ -129,7 +128,7 @@
 }
 
 .productBrand {
-  color: #1aa2b0;
+  color: var(--bright-teal);;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;

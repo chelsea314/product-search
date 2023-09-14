@@ -1,18 +1,11 @@
 :root {
-  /* --font-family: 'Inter', sans-serif;; */
   --bright-teal: #1AA2B0;
   --background-blue: #151420;
+  --blue-hue: #1e1d2d;
 }
 
 html,
 body {
   height: 100%;
   background: var(--background-blue);
-  margin: 0 auto;
-  /* position: relative; */
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
 }
