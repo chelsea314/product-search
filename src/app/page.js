@@ -9,6 +9,7 @@ import ProductCategory from "./components/ProductCategory";
 import ProductBrand from "./components/ProductBrand";
 import ProductPrice from "./components/ProductPrice";
 import ProductDescription from "./components/ProductDescription";
+import Practice from "./components/Practice";
 
 export default function Home() {
   // State settings for Product and Selection
@@ -43,7 +44,8 @@ export default function Home() {
   }
 
   return (
-    <div >
+    <div className="centered">
+      <Practice />
       <Dropdown onSubmit={handleChange} />
       {isSelectionMade ? (
         <div>
