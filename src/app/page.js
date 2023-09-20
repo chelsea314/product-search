@@ -9,7 +9,6 @@ import ProductCategory from "./components/ProductCategory";
 import ProductBrand from "./components/ProductBrand";
 import ProductPrice from "./components/ProductPrice";
 import ProductDescription from "./components/ProductDescription";
-import Practice from "./components/Practice";
 
 export default function Home() {
   // State settings for Product and Selection
@@ -44,8 +43,7 @@ export default function Home() {
   }
 
   return (
-    <div className="centered">
-      <Practice />
+    <div>
       <Dropdown onSubmit={handleChange} />
       {isSelectionMade ? (
         <div>
@@ -60,7 +58,9 @@ export default function Home() {
         </div>
         
       ) : (
-        <div className={styles.noProduct}>No Product Selected</div>
+        <div className={styles.noProduct}>
+          <p>No Product Selected</p>
+        </div>
       )}
     </div>
   );

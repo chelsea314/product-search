@@ -1,7 +1,6 @@
 import styles from '../page.module.css'
 
 export default function ProductCategory({value}) {
-    console.log(value);
     return (
         <>
             <div className={styles.categoryContainer}>

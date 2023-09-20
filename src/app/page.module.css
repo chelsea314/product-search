@@ -1,11 +1,3 @@
-.centered {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  margin-top: -50px;
-  margin-left: -100px;
-}
-
 /* 'No Product Data' Styles */
 .noProduct {
   color: var(--bright-teal);
@@ -14,28 +6,18 @@
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  /* position: fixed;
-  top: 564px;
-  left: 596px; */
+  margin: auto 0;
 }
 
 /* Dropdown Menu Styles*/
-.dropdown {
-  max-width: 13em;
-  margin: 80px auto 0;
-  position: relative;
-  width: 100%;
-}
-
 .dropdownBtn {
+  margin-top: 285px;
   background: var(--blue-hue); 
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  border-radius: 10px;
   border: 1px solid var(--bright-teal);
-  color: #fff;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -44,10 +26,6 @@
   color: var(--bright-teal);
   width: 600px;
   height: 60px;
-  flex-shrink: 0;
-  /* position: fixed;
-  top: 285px;
-  left: 383px; */
 }
 
 .arrow {
@@ -62,18 +40,12 @@
 
 .dropdownContent {
   list-style: none;
-  /* position: fixed;
-  top: 347px;
-  left: 383px; */
-  width: 600px;
   height: 462px;
-  flex-shrink: 0;
   border-radius: 6px;
   border: 1px solid var(--bright-teal);
   background: var(--blue-hue);
   overflow: auto;
   padding: 26px 0px;
-  margin:0px;
 }
 
 .dropdownContent li {
@@ -82,13 +54,13 @@
   font-style: normal;
   font-weight: 700;
   line-height: 46px;
-  display: block;
   text-decoration: none;
   padding-left: 26px;
 } 
 
 .dropdownContent li:hover {
   background: var(--background-blue);
+  cursor: pointer;
 }
 
 /* Product Data Styles */
@@ -168,3 +140,11 @@
   left: 699px; */
   display: flex;
 }
+
+/* Media Queries */
+@media only screen and (max-width:600px) {
+  .dropdownBtn {
+    width: 100vw;
+  }
+}
+  
