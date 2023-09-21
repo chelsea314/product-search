@@ -46,15 +46,17 @@ export default function Home() {
     <div>
       <Dropdown onSubmit={handleChange} />
       {isSelectionMade ? (
-        <div>
+        <div className={styles.productDataContainer}>
           <ProductThumbnail value={productData} />
-          <ProductTitle value={productData} />
-          <ProductBrand value={productData} />
-          <ProductTitle value={productData}/>
-          <ProductCategory value={productData}/>
-          <ProductBrand value={productData}/>
-          <ProductPrice value={productData}/>
-          <ProductDescription value={productData}/>
+          <div className={styles.productTextContainer}>
+            <ProductTitle value={productData} />
+            <ProductBrand value={productData} />
+            <ProductTitle value={productData}/>
+            <ProductCategory value={productData}/>
+            <ProductBrand value={productData}/>
+            <ProductPrice value={productData}/>
+            <ProductDescription value={productData}/>
+          </div>
         </div>
         
       ) : (
