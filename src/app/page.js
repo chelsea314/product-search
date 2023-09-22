@@ -43,22 +43,28 @@ export default function Home() {
   }
 
   return (
-    <div >
+    <div>
       <Dropdown onSubmit={handleChange} />
       {isSelectionMade ? (
-        <div>
+        <div className={styles.productDataContainer}>
           <ProductThumbnail value={productData} />
-          <ProductTitle value={productData} />
-          <ProductBrand value={productData} />
-          <ProductTitle value={productData}/>
-          <ProductCategory value={productData}/>
-          <ProductBrand value={productData}/>
-          <ProductPrice value={productData}/>
-          <ProductDescription value={productData}/>
+          <div className={styles.productTextContainer}>
+            <div className={styles.titleCategoryContainer}>
+              <ProductTitle value={productData} />
+              <ProductCategory value={productData}/>
+            </div>
+            <ProductBrand value={productData} />
+            <div className={styles.brandPriceContainer}>
+              <ProductPrice value={productData}/>
+            </div>
+            <ProductDescription value={productData}/>
+          </div>
         </div>
         
       ) : (
-        <div className={styles.noProduct}>No Product Selected</div>
+        <div className={styles.noProduct}>
+          <p>No Product Selected</p>
+        </div>
       )}
     </div>
   );

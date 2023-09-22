@@ -41,7 +41,7 @@ export default function Dropdown(props) {
   }
 
   return (
-    <div className={styles.dropdown}>
+    <div>
       <button
         defaultValue={selectedProduct}
         className={styles.dropdownBtn}
