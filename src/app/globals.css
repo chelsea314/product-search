@@ -1,7 +1,3 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 :root {
   --bright-teal: #1AA2B0;
   --background-blue: #151420;
