@@ -49,12 +49,14 @@ export default function Home() {
         <div className={styles.productDataContainer}>
           <ProductThumbnail value={productData} />
           <div className={styles.productTextContainer}>
-            <ProductTitle value={productData} />
+            <div className={styles.titleCategoryContainer}>
+              <ProductTitle value={productData} />
+              <ProductCategory value={productData}/>
+            </div>
             <ProductBrand value={productData} />
-            <ProductTitle value={productData}/>
-            <ProductCategory value={productData}/>
-            <ProductBrand value={productData}/>
-            <ProductPrice value={productData}/>
+            <div className={styles.brandPriceContainer}>
+              <ProductPrice value={productData}/>
+            </div>
             <ProductDescription value={productData}/>
           </div>
         </div>
