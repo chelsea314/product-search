@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import styles from "./page.module.css";
-import Dropdown from "./components/Dropdown"
+import Dropdown from "./components/dropdown"
 import ProductThumbnail from "./components/ProductThumbnail";
 import ProductTitle from "./components/ProductTitle";
 import ProductCategory from "./components/ProductCategory";
