@@ -7,8 +7,8 @@ const inter = Inter({
 })
 
 export const metadata = {
-  title: 'Shop til You Drop',
-  description: 'Search for products and recieve back information about selected product.',
+  title: 'Product Search',
+  description: 'Search for an array of different products from different categories. Recieve information regarding selected product.',
 }
 
 export default function RootLayout({ children }) {

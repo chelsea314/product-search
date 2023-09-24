@@ -1,8 +1,21 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Product Search
+## Description
+The Product Search application contains an array of items from which a user can select. Explore different products from categories such as, smartphones, laptops, groceries, fragrances and more! Upon product selection, users are presented with information about the product, including an image, brand name, price and a brief description. 
 
-## Getting Started
+This is a sample application representing my ability as a web developer to transform a [Figma mockup](https://www.figma.com/file/mWoyEepUuW9un60QzOnpUp/Frontend-Engineer-Take-Home-Assessment?type=design&node-id=1%3A15&mode=design&t=EomlY3pCiMAveAWz-1) into a functional application. 
 
-First, run the development server:
+In addition to the mockup provided, I have developed the applicaiton to be responsive for all screen sizes using CSS media queries.
+
+## Table of Contents
+- [Installation](#installation)
+- [Usage](#usage) 
+- [About](#about)
+- [Credits](#credits)
+- [Figma Mockups](#figma-mockups)
+
+## Installation
+
+First, clone the Product Search repository. Install the project's dependencies with `npm i`, then run the development server:
 
 ```bash
 npm run dev
@@ -14,21 +27,38 @@ pnpm dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## Usage
+### The starting view presents the user with a dropdown option to select a product. 
+![No Product Selected View](./public/noProductSelectedView.png)
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+### Users are presented with a list of choices to scroll through. 
+![Dropdown View](./public/dropdownView.png)
 
-## Learn More
+### Hover effects implemented to improve user experience.
+![Hover Effect Implemented](./public/selectAProductHover.jpg)
 
-To learn more about Next.js, take a look at the following resources:
+### Users are presented with data about selected products. Data is retrieved from  [dummyJSON](https://dummyjson.com/docs/products).
+![Product View](./public/productSelectedView.png)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Responsive view implemented.
+![Responsive View](./public/responsiveView.png)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## About
+This single page applicaiton uses product data from a third-party API, [dummyJSON](https://dummyjson.com/docs/products). 
 
-## Deploy on Vercel
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Figma Mockups
+### No Product Selected View:
+![Figma Mockup No Product Selected](./public/figmaNoneSelected.png)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+### Dropdown View:
+![Figma Mockup Dropdown](./public/figmaDropdown.png)
+
+### Product Selected View:
+![Figma Mockup Product Selected](./public/figmaProductSelected.png)
+
+## Credits
+The Figma mockup was provided by [Diligent Robotics](https://www.diligentrobots.com/) as part of their assessment process. 
+
+[dummyJSON](https://dummyjson.com/docs/products)
