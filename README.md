@@ -1,6 +1,10 @@
 # Product Search
+
+### Deployed via Vercel: 
+[https://product-search-334g7be5c-chelsea314.vercel.app/](https://product-search-334g7be5c-chelsea314.vercel.app/) 
+
 ## Description
-The Product Search application contains an array of items from which a user can select. Explore different products from categories such as, smartphones, laptops, groceries, fragrances and more! Upon product selection, users are presented with information about the product, including an image, brand name, price and a brief description. 
+The [Product Search](https://product-search-334g7be5c-chelsea314.vercel.app/) application contains an array of items from which a user can select. Explore different products from categories such as, smartphones, laptops, groceries, fragrances and more! Upon product selection, users are presented with information about the product, including an image, brand name, price and a brief description. 
 
 This is a sample application representing my ability as a web developer to transform a [Figma mockup](https://www.figma.com/file/mWoyEepUuW9un60QzOnpUp/Frontend-Engineer-Take-Home-Assessment?type=design&node-id=1%3A15&mode=design&t=EomlY3pCiMAveAWz-1) into a functional application. 
 
