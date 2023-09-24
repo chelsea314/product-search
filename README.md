@@ -48,7 +48,7 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 ![Responsive View](./public/responsiveView.png)
 
 ## About
-This single page applicaiton uses product data from a third-party API, [dummyJSON](https://dummyjson.com/docs/products). 
+This single page application uses product data from a third-party API, [dummyJSON](https://dummyjson.com/docs/products). 
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
