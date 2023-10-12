@@ -1,5 +1,8 @@
 # Product Search
 
+![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
+![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
+
 ### Deployed via Vercel: 
 [https://product-search-334g7be5c-chelsea314.vercel.app/](https://product-search-334g7be5c-chelsea314.vercel.app/) 
 
